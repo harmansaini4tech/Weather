@@ -3,7 +3,7 @@ import React from "react";
 const InformationWeather = ({ data }) => {
   console.log("yes", data);
   return (
-    <div className="row bg-opacity-25 d-flex justify-content-center align-items-center pt-2">
+    <div className="row bg-opacity-25 d-flex justify-content-center align-items-center pt-2 mb-4">
       <div
         style={{
           height: "500px",

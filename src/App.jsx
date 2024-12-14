@@ -5,6 +5,7 @@ import backgroundimage from "../public/images/background.jpg";
 const App = () => {
   return (
     <>
+      
       <div
         className="bg-image overflow-hidden "
         style={{
@@ -14,6 +15,7 @@ const App = () => {
           height: "100vh", // Adjust height as needed
         }}
       >
+        <h1 className="text-center text-white">Weather App</h1>
         <SearchBar />
       </div>
       

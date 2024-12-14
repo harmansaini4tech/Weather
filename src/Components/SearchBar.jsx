@@ -69,7 +69,7 @@ const SearchBar = () => {
     <>
       <form
         onSubmit={handleSubmitForm}
-        className="row p-4 d-flex justify-content-center"
+        className="row p-2 d-flex justify-content-center"
       >
         <div class=" col-8 col-md-4 col-lg-2 d-flex align-items-center justify-content-end flex-column">
           <input
