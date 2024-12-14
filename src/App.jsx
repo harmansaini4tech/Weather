@@ -5,13 +5,18 @@ import backgroundimage from "../public/images/background.jpg";
 const App = () => {
   return (
     <>
-      <div>
-        <img
-          src={backgroundimage}
-          className="h-100 w-100 position-absolute z-n1 "
-        />
+      <div
+        className="bg-image overflow-hidden "
+        style={{
+          backgroundImage: `url(${backgroundimage})`,
+          backgroundSize: "cover",
+          // backgroundPosition: "center",
+          height: "100vh", // Adjust height as needed
+        }}
+      >
+        <SearchBar />
       </div>
-      <SearchBar />
+      
     </>
   );
 };
