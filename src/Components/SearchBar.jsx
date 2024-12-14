@@ -67,8 +67,11 @@ const SearchBar = () => {
   console.log(data);
   return (
     <>
-      <form onSubmit={handleSubmitForm} className="row p-4 d-flex align-items-center justify-content-center">
-        <div class=" col-8 col-md-4 col-lg-2 d-flex align-items-center justify-content-end">
+      <form
+        onSubmit={handleSubmitForm}
+        className="row p-4 d-flex justify-content-center"
+      >
+        <div class=" col-8 col-md-4 col-lg-2 d-flex align-items-center justify-content-end flex-column">
           <input
             type="text"
             ref={searchRef}
@@ -76,6 +79,7 @@ const SearchBar = () => {
             placeholder="Enter city name"
             required
           />
+          <div className=" text-danger">{errorMsg}</div>
         </div>
 
         <div className=" col-4 col-md-4 col-lg-2">
@@ -84,12 +88,6 @@ const SearchBar = () => {
           </button>
         </div>
       </form>
-      <p
-        style={{ marginLeft: "-170px", lineHeight: "10px" }}
-        className="text-danger"
-      >
-        {errorMsg}
-      </p>
 
       <InformationWeather data={data}></InformationWeather>
     </>
